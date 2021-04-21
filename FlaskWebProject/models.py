@@ -8,7 +8,7 @@ from werkzeug import secure_filename
 from flask import flash
 
 blob_container = app.config['BLOB_CONTAINER']
-blob_service = BlockBlobService(account_name=app.config['BLOB_ACCOUNT'], account_key=app.config['3gge48mHelReZEGU4RJZYuNxfy8EPGXzFOSsACd03Qr6rW3NfIqNLyQkVYi4YmK7ZMwmWZXQRM38TalXNo+PFQ=='])
+blob_service = BlockBlobService(account_name=app.config['BLOB_ACCOUNT'], account_key=app.config['BLOB_STORAGE_KEY'])
 
 def id_generator(size=32, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
