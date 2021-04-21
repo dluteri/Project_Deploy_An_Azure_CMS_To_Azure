@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'luteriproject1'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_a7ca51d258bb43ad8535a9741cf4c3b8 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_62900c95ae954be1b9fa96a0df8aa8ce }}
