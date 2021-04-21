@@ -5,14 +5,14 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'storageaccountluteri'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'F7vN1MOqxfCn2NwDs1vg06YcXSpb2yLSrRi5BCZ/kvN/vup0U8xHQKUhqN2Sbyu1Z8x9j+hepI5neRtH5I8xcw=='
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'blobstorageaccountluteri'
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'fT3r8BZJyXVZQ99W+/UpGSQbh9FkrKDBawAcowYn4hH8Gd9LKa43o/x8J9dXEflvW2sl4zxkeagZjuDofyH+Fw=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'sqldatabaseserverluteri.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'sql-database-luteri'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'udacityadmin'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Password123!@#'
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Password123!@#Password123!@#'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
